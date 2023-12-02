@@ -2,7 +2,7 @@
 SELECT DISTINCT country
 FROM address;
 
---QUERY #2
+--QUERY #2 
 UPDATE coupons 
 SET discount_amount = 2
 WHERE code = 4575391336;
