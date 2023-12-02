@@ -1,4 +1,4 @@
---QUERY #1  Run this query to see what countries our customers live in.
+--QUERY #1 
 SELECT DISTINCT country
 FROM address;
 
