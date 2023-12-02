@@ -1,0 +1,476 @@
+body,
+html {
+    margin: 1px;
+    padding: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(287.15deg, #EFAFBC 0%, #C3E3FA 100%);
+    height: 150px;
+    /* You can adjust this to your desired height */
+    border-radius: 100px;
+    border-radius: 100px;
+}
+
+.header-container {
+    position: relative;
+    /* Establishes a positioning context */
+}
+
+/* Ensure the nav is on top of the gradient */
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.Essence-Boutique {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF5775;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    /* Adjusted height for slimmer nav */
+}
+
+nav li {
+    margin: 0 10px;
+    padding: 5px 20px;
+    /* Adjusted padding for slimmer nav */
+}
+
+
+
+
+nav a {
+    font-family: 'Pompiere', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    /* This ensures that width and height properties apply to inline elements like <a> */
+    color: #EFAFBC;
+    padding: 10px 10px;
+    border-radius: 100px;
+    transition: text-decoration 0.3s, color 0.3s;
+    /* Added transition for text-decoration */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #EFAFBC;
+}
+
+/* Category Navigation Menu */
+.category-menu {
+    background-color: transparent;
+    /* Remove background color */
+}
+
+.category-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.category-menu ul li {
+    margin: 0 15px;
+}
+
+.category-menu ul li a {
+    text-decoration: none;
+    color: black;
+    /* Set text color to black */
+    font-size: 1em;
+}
+
+.cart-icon {
+    border-radius: 50%;
+    /* Makes the shape circular */
+    transition: background-color 0.3s;
+    /* Smooth transition for the background color */
+}
+
+.cart-icon:hover {
+    background-color: #ADD8E6;
+    /* Light blue background on hover */
+    padding: 5px;
+    /* Adjust padding to create the circle size */
+}
+
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    /* Adjusts the space between the two sections */
+    align-items: center;
+    /* Aligns items vertically in the center */
+}
+
+.buy-now-button {
+    display: inline-block;
+    background-color: white;
+    color: #EFAFBC;
+    /* Text color */
+    padding: 10px 20px;
+    border-radius: 50px;
+    /* This makes it rounded */
+    text-decoration: none;
+    /* Removes the default underline of links */
+    font-weight: bold;
+    margin-top: 20px;
+    /* Space between the text and the button */
+    box-shadow: 0 0 10px rgba(173, 216, 230, 0.5);
+    /* This will give a slight blue glow */
+    transition: box-shadow 0.3s ease;
+    /* Makes the glow transition smooth */
+}
+
+.buy-now-button:hover {
+    box-shadow: 0 0 15px rgba(173, 216, 230, 0.8);
+    /* Intensifies the blue glow on hover */
+}
+
+.social-media-icons {
+    margin-top: 20px;
+    /* Space between the button and the icons */
+    display: flex;
+    justify-content: left;
+    /* Center align the icons */
+}
+
+.social-icon {
+    margin: 0 10px;
+    /* Adds some space between each icon */
+    text-decoration: none;
+    font-size: 24px;
+    /* Adjust this value to make the icons bigger or smaller */
+    color: #000;
+    /* Initial color of the icons */
+    transition: color 0.3s ease;
+    /* Makes the color change transition smooth */
+}
+
+.social-icon:hover {
+    color: #D6405A;
+    /* Changes the color when hovered */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+    cursor: pointer;
+    float: right;
+}
+
+/* for the slide show on main page */
+.slideshow-container {
+    position: relative;
+    width: 50%;
+    /* Adjust based on your layout */
+}
+
+.jacket-slide {
+    display: none;
+}
+
+.jacket-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.eclipse-container {
+    position: relative;
+    display: inline-block;
+    /* or block depending on your layout */
+}
+
+.eclipse-image {
+    width: 100%;
+    /* Adjust as needed */
+    display: block;
+    /* Ensures there are no unwanted margins/paddings */
+}
+
+/* dot navigation on main page */
+.dot-container {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    /* Adds a white border */
+    box-sizing: border-box;
+    /* Ensures the border doesn't increase the size of the dots */
+    z-index: 2;
+}
+
+.pink-dot {
+    background-color: #DEA8B5;
+}
+
+.blue-dot {
+    background-color: #1C1B20;
+}
+
+.green-dot {
+    background-color: #80C7D9;
+}
+
+/* Styling for the connected ellipses */
+
+.dot-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    /* This will distribute the dots */
+    align-items: center;
+    /* This will vertically center the dots */
+}
+
+.eclipse-info-section {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    /* Adjust as needed */
+}
+
+
+.info-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    /* Space between each info box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.jacket-small-image {
+    width: 50px;
+    /* Adjust based on your image size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.jacket-info h4 {
+    margin: 0;
+    /* Add any additional styling for the jacket name */
+}
+
+.jacket-info .original-price {
+    text-decoration: line-through;
+    color: red;
+    font-size: smaller;
+}
+
+.jacket-info .markdown-price {
+    font-size: larger;
+    /* Additional styling for markdown price */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align the items */
+    text-align: center;
+    /* Center align the text */
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    /* Set a fixed height for images */
+    object-fit: cover;
+    /* This ensures the image covers the area without distortion */
+}
+
+.product-card .item-name,
+.product-card .item-price {
+    font-family: 'Permanent Marker', sans-serif;
+    /* Replace with your font family */
+    color: black;
+    margin: 5px 0;
+}
+
+/* Example: Specific styling for item name */
+.product-card .item-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Example: Specific styling for item price */
+.product-card .item-price {
+    font-size: 1em;
+}
+
+/* Shopping cart styling */
+.basket-title h1 {
+    /* Large dark pink text */
+    color: darkpink;
+    font-size: 2em;
+}
+
+.basket-title span {
+    /* Smaller text for item count */
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.cart-items,
+.order-summary {
+    /* Styling for cart items and order summary */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    /* Individual cart item */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    /* Item image */
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.continue-btn {
+    /* Continue to payment button */
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/*making page responsive*/
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    .Essence-Boutique {
+        margin-bottom: 10px;
+    }
+}
+
+/* New CSS for specified styles */
+
+h3 {
+    font-family: 'Road Rage';
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.27em;
+    text-align: left;
+}
+
+.essence-text {
+    font-family: 'Permanent Marker', sans-serif;
+    /* Include a fallback font for better compatibility */
+}
+
+.welcome-text {
+    font-family: 'Rock Salt', sans-serif;
+    /* Include a fallback font for better compatibility */
+}
+
+
+h2 {
+    /* Style 1: */
+    font-family: 'Permanent Marker';
+    color: #D6405A;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 85px;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.content h5 {
+    font-family: Montserrat, sans-serif;
+    /* Added a fallback font in case Montserrat doesn't load */
+    font-size: 24px;
+    color: #D6405A;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
